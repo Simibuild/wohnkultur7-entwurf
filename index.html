@@ -356,8 +356,8 @@
     </div>
 
     <!-- Leistung 2: Innenausbau -->
-    <div class="mt-20 grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
-      <div class="reveal order-2 lg:order-1">
+    <div class="mt-20 max-w-3xl">
+      <div class="reveal">
         <h3 class="text-2xl font-bold text-ink sm:text-3xl">Innenausbau als Gesamtwerk</h3>
         <p class="mt-4 leading-relaxed">Innenausbau heißt für uns, den Raum als Ganzes zu denken: Wand, Decke, Einbauten und Licht greifen ineinander. Wir bauen Dachschrägen aus, verkleiden Wände und Decken aus Holz und nutzen jede Nische als Stauraum.</p>
         <ul class="mt-5 grid gap-2 text-[15px] sm:grid-cols-2">
@@ -369,11 +369,6 @@
         </ul>
         <p class="mt-6 rounded-md bg-cream px-4 py-3 text-[15px]"><strong class="text-ink">Richtwerte:</strong> Wandverkleidung in Holz ab 89 € pro m², Montage ohne Material.</p>
         <a href="#kontakt" class="link-underline mt-6 inline-block font-semibold text-brand">Innenausbau besprechen</a>
-      </div>
-      <div class="reveal reveal-delay-1 order-1 lg:order-2">
-        <div class="slot aspect-[4/3] w-full rounded-lg" role="img" aria-label="Platzhalter für ein Projektfoto Innenausbau">
-          <span class="slot-label">Projektfoto Innenausbau einfügen</span>
-        </div>
       </div>
     </div>
 
@@ -499,31 +494,6 @@
   </div>
 </section>
 
-<!-- ================= REFERENZEN ================= -->
-<section id="referenzen" class="py-20 sm:py-24">
-  <div class="mx-auto max-w-6xl px-4 sm:px-6">
-    <div class="reveal max-w-2xl">
-      <h2 class="text-3xl font-extrabold leading-tight text-ink sm:text-4xl">Projekte aus Werkstatt und Montage</h2>
-      <p class="mt-4 text-lg leading-relaxed">Einblicke aus Möbelbau, Innenausbau und Treppenbau in Regensburg und Umgebung.</p>
-    </div>
-
-    <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      <figure class="reveal">
-        <div class="slot aspect-[4/3] w-full rounded-lg" role="img" aria-label="Platzhalter für ein Referenzfoto Möbelbau"><span class="slot-label">Referenzfoto Möbelbau einfügen</span></div>
-        <figcaption class="mt-3 font-semibold text-ink">Einbauschrank nach Maß <span class="font-normal text-body">(Projekt folgt)</span></figcaption>
-      </figure>
-      <figure class="reveal reveal-delay-1">
-        <div class="slot aspect-[4/3] w-full rounded-lg" role="img" aria-label="Platzhalter für ein Referenzfoto Treppenbau"><span class="slot-label">Referenzfoto Treppenbau einfügen</span></div>
-        <figcaption class="mt-3 font-semibold text-ink">Treppenbau <span class="font-normal text-body">(Projekt folgt)</span></figcaption>
-      </figure>
-      <figure class="reveal reveal-delay-2">
-        <div class="slot aspect-[4/3] w-full rounded-lg" role="img" aria-label="Platzhalter für ein Referenzfoto Deckenverkleidung"><span class="slot-label">Referenzfoto Deckenverkleidung einfügen</span></div>
-        <figcaption class="mt-3 font-semibold text-ink">Deckenverkleidung in Massivholz <span class="font-normal text-body">(Projekt folgt)</span></figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
-
 <!-- ================= PROJEKT-FINDER ================= -->
 <section class="py-20 sm:py-24">
   <div class="mx-auto max-w-3xl px-4 sm:px-6">
@@ -583,12 +553,8 @@
 
 <!-- ================= ÜBER UNS ================= -->
 <section id="ueber-uns" class="py-20 sm:py-24">
-  <div class="mx-auto grid max-w-6xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:gap-16">
+  <div class="mx-auto max-w-3xl px-4 sm:px-6">
     <div class="reveal">
-      <div class="slot aspect-[4/5] w-full rounded-lg" role="img" aria-label="Platzhalter für ein Portraitfoto von Alexander Junker"><span class="slot-label">Portraitfoto Alexander Junker einfügen</span></div>
-      <p class="mt-3 text-sm text-body">Alexander Junker, Geschäftsführer Wohnkultur7 KG</p>
-    </div>
-    <div class="reveal reveal-delay-1">
       <h2 class="text-3xl font-extrabold leading-tight text-ink sm:text-4xl">Eine kleine Manufaktur, in der dieselben Leute planen und bauen</h2>
       <p class="mt-5 leading-relaxed">Wohnkultur7 ist eine kleine Manufaktur in Nittendorf bei Regensburg. Was uns antreibt, ist die Freude an gutem Handwerk: an der Maserung eines Bretts, an der sauberen Fuge und an einem Möbel, das genau in seinen Raum wächst.</p>
       <p class="mt-4 leading-relaxed">Vom ersten Entwurf über die Fertigung in der eigenen Werkstatt bis zur Montage bei Ihnen zu Hause bleibt alles in einer Hand. Dass unsere Kunden uns mit 4,9 von 5 Sternen bewerten, ist für uns der beste Beweis, dass sich dieser Anspruch lohnt.</p>
@@ -969,13 +935,6 @@
     });
   }
 </script>
-
-<style>
-  /* Platzhalter für Fotos, die noch fehlen. Einfach durch <img> ersetzen. */
-  .slot { position: relative; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #efe6d8 0%, #e6d3b8 100%); }
-  .slot::after { content: ""; position: absolute; inset: 14px; border: 1px dashed rgba(138, 106, 67, .45); border-radius: 8px; pointer-events: none; }
-  .slot-label { position: relative; z-index: 1; padding: 0 24px; text-align: center; font-size: 14px; font-weight: 600; color: #6b5234; }
-</style>
 
 <script>
   (() => {
